@@ -7,13 +7,13 @@ export default function QuickStartPage() {
           Get up and running with S7AR in just a few minutes.
         </p>
         <h2>Basic Setup</h2>
-        <pre><code className="language-javascript">import { S7AR } from 's7ar';
+        <pre><code className="language-javascript">{`import { S7AR } from 's7ar';
 
 const app = new S7AR();
-app.initialize();</code></pre>
+app.initialize();`}</code></pre>
         <h2>Hello World</h2>
-        <pre><code className="language-javascript">app.hello('World');
-// Output: Hello, World!</code></pre>
+        <pre><code className="language-javascript">{`app.hello('World');
+// Output: Hello, World!`}</code></pre>
         <h2>Next Steps</h2>
         <ul>
           <li>Read the API documentation</li>
