@@ -12,7 +12,7 @@ export default function APIPage() {
         <pre><code className="language-javascript">app.initialize();</code></pre>
         <h3>configure(options)</h3>
         <p>Configure S7AR with custom options.</p>
-        <pre><code className="language-javascript">app.configure({ debug: true });</code></pre>
+        <pre><code className="language-javascript">{`app.configure({ debug: true });`}</code></pre>
         <h3>use(plugin)</h3>
         <p>Register a plugin with S7AR.</p>
         <pre><code className="language-javascript">app.use(myPlugin);</code></pre>
