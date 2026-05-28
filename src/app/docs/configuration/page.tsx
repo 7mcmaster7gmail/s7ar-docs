@@ -7,11 +7,11 @@ export default function ConfigurationPage() {
           Configure S7AR to suit your needs.
         </p>
         <h2>Configuration Options</h2>
-        <pre><code className="language-javascript">{
+        <pre><code className="language-javascript">{`{
   debug: true,
   timeout: 5000,
   retries: 3
-}</code></pre>
+}`}</code></pre>
         <h2>Environment Variables</h2>
         <p>Use environment variables for sensitive configuration.</p>
       </div>
