@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { ArticlePagination } from '@/components/article-pagination';
 import { Navbar } from '@/components/navbar';
 import { Sidebar } from '@/components/sidebar';
 import { TableOfContents } from '@/components/table-of-contents';
@@ -28,6 +29,7 @@ export default function RootLayout({
               <Sidebar />
               <main className="min-w-0 flex-1 px-6 py-8 sm:px-8 lg:px-12">
                 {children}
+                <ArticlePagination />
               </main>
               <TableOfContents />
             </div>

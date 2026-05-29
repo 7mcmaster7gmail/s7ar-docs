@@ -79,6 +79,26 @@ pre code {
   @apply my-5 list-disc space-y-2 pl-6;
 }
 
+.prose-nextra ol {
+  @apply my-5 list-decimal space-y-2 pl-6;
+}
+
+.prose-nextra blockquote {
+  @apply my-6 border-l-2 border-neutral-300 pl-4 text-neutral-600 dark:border-neutral-700 dark:text-neutral-400;
+}
+
+.prose-nextra table {
+  @apply my-6 w-full border-collapse text-sm;
+}
+
+.prose-nextra th {
+  @apply border-b border-neutral-200 px-3 py-2 text-left font-semibold text-neutral-950 dark:border-neutral-800 dark:text-neutral-50;
+}
+
+.prose-nextra td {
+  @apply border-b border-neutral-200 px-3 py-2 dark:border-neutral-800;
+}
+
 .prose-nextra .breadcrumb {
   @apply mb-6 text-sm text-neutral-500 dark:text-neutral-500;
 }
