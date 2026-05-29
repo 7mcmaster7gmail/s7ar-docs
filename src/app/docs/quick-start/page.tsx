@@ -1,7 +1,6 @@
 export default function QuickStartPage() {
   return (
-    <div className="max-w-3xl mx-auto px-4 py-8">
-      <div className="prose dark:prose-dark max-w-none">
+    <article className="prose-nextra">
         <h1>Quick Start</h1>
         <p>
           Get up and running with S7AR in just a few minutes.
@@ -20,7 +19,6 @@ app.initialize();`}</code></pre>
           <li>Explore the examples</li>
           <li>Check out the guides</li>
         </ul>
-      </div>
-    </div>
+    </article>
   );
 }

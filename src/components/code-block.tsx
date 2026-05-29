@@ -27,7 +27,7 @@ export function CodeBlock({ code, language = 'bash', title }: CodeBlockProps) {
       )}
       <div className="relative">
         <pre className="p-4 overflow-x-auto">
-          <code className="text-sm text-gray-800 dark:text-gray-200">{code}</code>
+          <code className={`text-sm text-gray-800 dark:text-gray-200 language-${language}`}>{code}</code>
         </pre>
         <button
           onClick={copyToClipboard}

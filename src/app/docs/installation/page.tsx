@@ -1,7 +1,6 @@
 export default function InstallationPage() {
   return (
-    <div className="max-w-3xl mx-auto px-4 py-8">
-      <div className="prose dark:prose-dark max-w-none">
+    <article className="prose-nextra">
         <h1>Installation</h1>
         <p>
           Get started with S7AR by installing it via your package manager.
@@ -16,7 +15,6 @@ export default function InstallationPage() {
         <p>Verify that S7AR is installed correctly:</p>
         <pre><code className="language-bash">npm list s7ar</code></pre>
         <p>You should see the version number displayed in the output.</p>
-      </div>
-    </div>
+    </article>
   );
 }
