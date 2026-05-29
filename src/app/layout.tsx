@@ -1,12 +1,13 @@
 import type { Metadata } from 'next';
-import { ThemeProvider } from '@/components/theme-provider';
 import { Navbar } from '@/components/navbar';
 import { Sidebar } from '@/components/sidebar';
+import { TableOfContents } from '@/components/table-of-contents';
+import { ThemeProvider } from '@/components/theme-provider';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'S7AR Documentation',
-  description: 'Comprehensive S7AR documentation and guides',
+  title: 'S7AR Docs',
+  description: 'S7AR documentation site',
   icons: {
     icon: '/favicon.ico',
   },
@@ -18,19 +19,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-      </head>
-      <body className="bg-white dark:bg-gray-950 text-gray-900 dark:text-gray-50">
+    <html lang="zh-CN" suppressHydrationWarning>
+      <body className="bg-white text-neutral-900 antialiased dark:bg-neutral-950 dark:text-neutral-50">
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <div className="flex flex-col min-h-screen">
+          <div className="min-h-screen bg-white dark:bg-neutral-950">
             <Navbar />
-            <div className="flex flex-1">
+            <div className="mx-auto flex max-w-[90rem]">
               <Sidebar />
-              <main className="flex-1 overflow-y-auto">
+              <main className="min-w-0 flex-1 px-6 py-8 sm:px-8 lg:px-12">
                 {children}
               </main>
+              <TableOfContents />
             </div>
           </div>
         </ThemeProvider>

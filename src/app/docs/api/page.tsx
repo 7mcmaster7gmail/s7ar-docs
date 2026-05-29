@@ -1,7 +1,6 @@
 export default function APIPage() {
   return (
-    <div className="max-w-3xl mx-auto px-4 py-8">
-      <div className="prose dark:prose-dark max-w-none">
+    <article className="prose-nextra">
         <h1>API Reference</h1>
         <p>
           Complete API reference for S7AR.
@@ -16,7 +15,6 @@ export default function APIPage() {
         <h3>use(plugin)</h3>
         <p>Register a plugin with S7AR.</p>
         <pre><code className="language-javascript">app.use(myPlugin);</code></pre>
-      </div>
-    </div>
+    </article>
   );
 }

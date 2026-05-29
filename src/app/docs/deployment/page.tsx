@@ -1,7 +1,6 @@
 export default function DeploymentPage() {
   return (
-    <div className="max-w-3xl mx-auto px-4 py-8">
-      <div className="prose dark:prose-dark max-w-none">
+    <article className="prose-nextra">
         <h1>Deployment</h1>
         <p>
           Deploy your S7AR applications to production.
@@ -11,7 +10,6 @@ export default function DeploymentPage() {
         <pre><code className="language-bash">vercel deploy</code></pre>
         <h2>Docker Deployment</h2>
         <p>Deploy using Docker for containerized environments.</p>
-      </div>
-    </div>
+    </article>
   );
 }
